@@ -1,0 +1,25 @@
+{
+  "name": "sample-rv-resolve-bug",
+  "private": true,
+  "packageManager": "yarn@4.0.2",
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "apps/*"
+    ]
+  },
+  "scripts": {
+    "build": "turbo build",
+    "clean": "turbo clean",
+    "dev": "turbo dev",
+    "lint": "turbo lint"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "turbo": "^1.11.1",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

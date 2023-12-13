@@ -1,0 +1,26 @@
+{
+  "name": "@repo/backend",
+  "version": "1.0.0",
+  "type": "module",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prepublishOnly": "yarn run build",
+    "build": "tsc --build",
+    "clean": "rm -rf dist",
+    "test_run": "node dist/src/test_run.js"
+  },
+  "files": [
+    "dist/",
+    "src/"
+  ],
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "dependencies": {
+    "@repo/backend-lib": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.4",
+    "typescript": "^5.3.3"
+  }
+}
